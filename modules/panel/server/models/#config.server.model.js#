@@ -1,0 +1,28 @@
+'use strict';
+
+/**
+ * Module dependencies.
+ */
+var mongoose = require('mongoose'),
+  Schema = mongoose.Schema;
+
+/**
+ * Config Schema
+ */
+var ConfigSchema = new Schema({
+  key: {
+    type: String,
+    trim: true,
+    unique: 'Username already exists',
+    required: 'Please fill in a username',
+    validate: [validateLocalStrategyProperty, 'Please fill in your first name']
+  },
+  lastName: {
+    type: String,
+    trim: true,
+    default: '',
+    validate: [validateLocalStrategyProperty, 'Please fill in your last name']
+  },
+});
+
+mongoose.model('Config', ConfigSchema);
