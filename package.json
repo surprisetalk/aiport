@@ -1,0 +1,19 @@
+{
+  "name": "aiport",
+  "version": "0.0.1",
+  "description": "simple cms",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surprisetalk/aiport.git"
+  },
+  "author": "taylor sarrafian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surprisetalk/aiport/issues"
+  },
+  "homepage": "https://github.com/surprisetalk/aiport#readme"
+}
